@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrustar Video Brightcove</title>
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+</head>
+<body>
+
+<video-js id="brightcovePlayer"  data-player="default" data-embed="default" data-video-id="6351964804112"  data-application-id="" class="vjs-fluid video-js vjs-controls-enabled vjs-workinghover vjs-v7 bc-player-default_default bc-player-default_default-index-0 vjs-mouse vjs-bc-airplay vjs-dock vjs-plugins-ready vjs-player-info vjs-contextmenu vjs-contextmenu-ui vjs-errors vjs-has-started vjs-paused vjs-layout-large not-hover vjs-user-inactive" >
+   
+</video-js>
+
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<script src="https://players.brightcove.net/6415672036001/default_default/index.min.js"></script>
+<script>
+    var player = videojs('brightcovePlayer');
+    player.ready(function() {
+        console.log('Player is ready');
+        // Puedes agregar más configuraciones o eventos aquí si es necesario
+    });
+</script>
+
+</body>
+</html>
